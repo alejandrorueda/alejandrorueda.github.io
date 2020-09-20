@@ -1,0 +1,33 @@
+---
+layout: compress.html
+---
+
+{% if page.name == 'blog' %}
+
+{% assign body_class = 'version-blog' %}
+
+{% else %}
+
+{% assign body_class = 'version7' %}
+
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+{% include head.html %}
+
+<body class="{{ body_class }}">
+
+	{% include header.html %}
+
+	{{ content }}
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+</body>
+
+</html>
+
+

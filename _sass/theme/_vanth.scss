@@ -1,0 +1,201 @@
+
+.row-header {
+    font-family: 'Roboto';
+    h1 {
+        font-size: 48px !important;
+    }
+}
+
+.row-annoucement {
+    margin-left:10% !important;
+
+}
+.row-annoucement-right {
+    padding:20px !important;
+    margin-left:100px !important; 
+    margin-top:5% !important;
+}
+.row-hashtag {
+    font-weight: 100; color:#F1454C;font-size:60px !important;
+}
+
+
+.card-product {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  }
+  
+  border-radius: 1.4rem;
+  min-height: 55rem;
+  width: 31.5rem;
+}
+
+.dark-section {
+    background-color:#231f20;
+}
+
+.light-section {
+
+}
+
+.product-text {
+    height: 900px;
+}
+
+.social-icon {
+    width:100px !important;
+    height:100px !important;
+}
+
+.no-wrap {
+    flex-wrap: unset !important;
+}
+
+.mobile-hidden {
+    background-color:#231f20; 
+}
+
+.card-product-text {
+    padding: 40px;
+}
+
+.p-3 {
+    padding: 1rem  !important;;
+}
+
+@media(max-width: 700px) {
+
+    .genric-btn2 {
+        font-size: 20px !important;
+    }
+    .p-3 {
+        padding: 0.7rem !important;
+    }
+    .card-product-text {
+        padding: 0px;
+    }
+    .timeline {
+        max-width: 10px;
+    }
+    .mobile-hidden *{
+        visibility: hidden;
+        height: 0px;
+        background-color:white !important;
+    }
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    .row-hashtag {
+        margin-top: 30px;
+        font-weight: 100; color:#F1454C;font-size:30px !important;
+    }
+    .row-header h1 {
+        font-size: 38px !important;
+    }
+    .row-annoucement {
+        margin-left:0% !important;
+        > p {
+            font-size: 45px !important;
+        }
+    }
+    .row-annoucement-right { 
+        padding:0px !important;
+        margin-left: 20px !important; 
+        margin-top:5% !important;
+    }
+    .card-counter2 {
+        width: 140px !important;
+        max-height: 469px;
+    }
+    .card-counter2-non-required {
+        visibility: hidden !important;
+        height: 0px;
+    }
+    .card-counter2-non-required > * {
+        visibility: hidden !important;
+        height: 0px;
+    }
+    .row-alternative-image {
+        height: auto !important;
+        overflow: hidden;
+    }
+    .row-alternative {
+        padding:20px !important;
+        height: 100% !important;
+    }
+
+    
+
+    .product-text ul, .product-text li span {
+        font-size: 14px !important;
+    }
+
+    .card-product {
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover {
+        box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+      }
+      
+      border-radius: 1.4rem;
+      
+      width: 20.5rem;
+    }
+
+    .product-text {
+        height: auto;
+    }
+    .no-wrap {
+        flex-wrap: wrap !important;
+    }
+    #mobile-nav-toggle i {
+        color: white !important;
+    }
+    .product-checklist ul {
+        width: 18em !important;
+    }
+}
+
+.product-checklist ul {
+    width: 17em !important;
+}
+.img-hover {
+    a img:hover {
+        transform: scale(1.2) !important;
+        transition: all .5s;
+    }
+}
+
+.row-alternative-left {
+    background-color:#16a3dd;
+    div * {
+        color:black !important;
+    }
+}
+
+.row-alternative-right{
+    background-color:#231f20;
+    div *{
+        color:whitesmoke !important;
+    }
+}
+.row-alternative-image {
+    height: 720px;
+}
+
+.row-alternative {
+    height: 720px;
+    h2 {
+        font-size: 2.5em !important;
+        max-width: 460px;font-family: 'Roboto'; 
+    }
+    p {
+        line-height: 25pt;
+        font-size:23px !important; 
+        max-width:650px !important;
+    }
+}

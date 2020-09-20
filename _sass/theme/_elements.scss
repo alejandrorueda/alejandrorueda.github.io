@@ -1,0 +1,719 @@
+/*--------------------------------------------------------------
+# Elements 
+--------------------------------------------------------------*/
+
+.section-gap {
+    padding: 120px 0;
+    @media(max-width: 991px) {
+        padding: 60px 0px;
+    }
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.aquablue-bg {
+    background: $offwhite;
+}
+
+.container-dark {
+    color: white !important;
+}
+
+.dark-bg {
+    background: #231f20;
+}
+
+.gradient-bg {
+    @extend .d1-gradient-bg;
+}
+
+.gradient-bg2 {
+    @extend .d3-gradient-bg;
+}
+
+.gradient-bg4 {
+    @extend .d4-gradient-bg;
+}
+
+.section-title-wrap {
+    text-align: center;
+    margin-bottom: 80px;
+    .title-img {
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 15px;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0px;
+            @include transform(translateX(-50%));
+            background: $offwhite;
+            height: 3px;
+            width: 80px;
+        }
+    }
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+        color: $title-color;
+    }
+    p {
+        max-width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+.d5-gradient-bg {
+    background-image: -moz-linear-gradient( 110deg, $primary-color 0%, $primary-color2 100%);
+    background-image: -webkit-linear-gradient(110deg, #300707 0%, #434141 100%);
+    background-image: -ms-linear-gradient( 110deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.d1-gradient-bg {
+    background-image: -moz-linear-gradient( 110deg, $primary-color 0%, $primary-color2 100%);
+    background-image: -webkit-linear-gradient( 110deg, $primary-color 0%, $primary-color2 100%);
+    background-image: -ms-linear-gradient( 110deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.d2-gradient-bg {
+    background-image: -moz-linear-gradient( 0deg, rgb(95, 185, 253) 0%, rgb(114, 227, 166) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(95, 185, 253) 0%, rgb(114, 227, 166) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(95, 185, 253) 0%, rgb(114, 227, 166) 100%);
+}
+
+.d3-gradient-bg {
+    background-image: -moz-linear-gradient(0deg, rgb(44, 0, 255) 0%, rgb(163, 82, 245) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(44, 0, 255) 0%, rgb(163, 82, 245) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(44, 0, 255) 0%, rgb(163, 82, 245) 100%);
+}
+
+.d4-gradient-bg {
+    background-image: -moz-linear-gradient(0deg, #9a88ff 0%, #5a61ff 100%);
+    background-image: -webkit-linear-gradient(0deg, #9a88ff 0%, #5a61ff 100%);
+    background-image: -ms-linear-gradient(0deg, #9a88ff 0%, #5a61ff 100%);
+}
+
+.v3-gradient-bg {
+    background-image: -moz-linear-gradient( 0deg, rgb(20, 29, 162) 0%, rgb(139, 62, 251) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(20, 29, 162) 0%, rgb(139, 62, 251) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(20, 29, 162) 0%, rgb(139, 62, 251) 100%);
+}
+
+.genric-btn {
+    background: $offwhite;
+    color: $title-color;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    max-width: 100%;
+    padding: 0px 34px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0px;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    height: 50px;
+    line-height: 50px;
+    transition: .3s;
+    cursor: pointer;
+    &:hover {
+        @extend .d1-gradient-bg;
+        color: $white;
+    }
+}
+
+$dark4: #424242;
+
+
+.genric-btn2 {
+    @extend .d1-gradient-bg;
+    color: $white;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    max-width: 100%;
+    padding: 0px 34px;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    height: 50px;
+    line-height: 50px;
+    transition: .3s;
+    cursor: pointer;
+    @include transition();
+    &:hover {
+        background: $offwhite;
+        color: $title-color;
+    }
+}
+
+
+.button1 {
+    
+    color: $white;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    max-width: 100%;
+    padding: 0px 34px;
+    font-size: 28px;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    height: 50px;
+    line-height: 50px;
+    transition: .3s;
+    cursor: pointer;
+    @include transition();
+    &:hover {
+        background: $offwhite;
+        color: $title-color;
+    }
+}
+
+.button2 {
+    
+    color: $white;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    max-width: 100%;
+    padding: 0px 34px;
+    font-size: 28px;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    height: 50px;
+    line-height: 50px;
+    transition: .3s;
+    cursor: pointer;
+    @include transition();
+    &:hover {
+        background: $offwhite;
+        color: $title-color;
+    }
+}
+
+.genric-btn3 {
+    background-color: #ffffff;
+    color: $title-color;
+    border: 0px;
+    padding: 0px 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    max-width: 100%;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    @include transition();
+    &:hover {
+        &:hover {
+            @extend .d1-gradient-bg;
+            color: $white;
+        }
+    }
+}
+
+.pr-btn2 {
+    margin: 0px 5px;
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    @extend .d3-gradient-bg;
+    border: 1px solid #bed2f0 !important;
+    color: $white !important;
+    &:hover {
+        @extend .d3-gradient-bg;
+        color: $white !important;
+    }
+    @media(max-width:413px) {
+        font-size: 12px;
+    }
+}
+
+.active2 {
+    background: white;
+    color: $black !important;
+}
+
+.border-top {
+    border-top: 1px solid $aquablue-color;
+}
+
+.page-top-section {
+    background: url(../img/footer/page-top-bg.jpg) center/cover;
+    padding-top: 235px;
+    padding-bottom: 40px;
+    .page-top-nav {
+        text-align: right;
+        @media(max-width: 767px) {
+            text-align:left;
+            margin-top: 30px;
+        }
+        a {
+            text-transform: uppercase !important;
+            color: $white;
+        }
+        .lnr {
+            color: $white;
+            padding: 0px 10px;
+            font-weight: 700;
+        }
+    }
+}
+
+.social-heading {
+    max-width: 425px;
+}
+
+.mw-510 {
+    max-width: 510px;
+}
+
+.cta-section {
+    padding: 100px 0px;
+    h1 {
+        @media(max-width: 1199px)and(min-width: 991px) {
+            font-size:30px;
+        }
+    }
+    @media(max-width:991px) {
+        .justify-content-end {
+            justify-content: flex-start !important;
+        }
+        .cta-btn {
+            margin-top: 30px;
+        }
+    }
+}
+
+    .ct-btn1 {
+        background: #ffffff;
+        color: $title-color;
+        height: 48px;
+        line-height: 46px;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        font-weight: 600;
+        max-width: 100%;
+        padding: 0px 34px;
+        font-size: 12px;
+        text-transform: uppercase;
+        max-width: 100%;
+        font-weight: 600;
+        border: 2px solid #ffffff;
+        text-align: center;
+        overflow: hidden;
+        @include transition();
+        &:hover {
+            background: transparent;
+            color: #fff;
+        }
+    }
+    .ct-btn2 {
+        background: transparent;
+        color: #fff;
+        height: 48px;
+        line-height: 46px;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        font-weight: 600;
+        max-width: 100%;
+        padding: 0px 34px;
+        font-size: 12px;
+        text-transform: uppercase;
+        max-width: 100%;
+        font-weight: 600;
+        border: 2px solid #ffffff;
+        text-align: center;
+        overflow: hidden;
+        @include transition();
+        &:hover {
+            background: #ffffff;
+            color: $title-color;
+        }
+    }
+
+.version1-1 {
+    .ct-btn {
+        margin: 0px 5px;
+        @extend .d2-gradient-bg;
+        color: $white;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        font-weight: 600;
+        max-width: 100%;
+        padding: 8px 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        @include transition();
+        &.active {
+            background: rgba($white, .2);
+            border-color: $white;
+            @include transition();
+            &:hover {
+                @extend .d2-gradient-bg;
+                border-color: transparent;
+            }
+        }
+        @media(max-width:413px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.version2 {
+    .ct-btn {
+        margin: 0px 5px;
+        background: $white;
+        color: $black;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        font-weight: 600;
+        max-width: 100%;
+        padding: 8px 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        @include transition();
+        &.active {
+            background: rgba($white, .2);
+            border-color: $white;
+            color: $white;
+            @include transition();
+            &:hover {
+                background: $white;
+                color: $black;
+                border-color: $white;
+            }
+        }
+        @media(max-width:413px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.version3 {
+    .ct-btn {
+        margin: 0px 5px;
+        @extend .d2-gradient-bg;
+        color: $white;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        font-weight: 600;
+        max-width: 100%;
+        padding: 8px 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        @include transition();
+        &.active {
+            background: rgba($white, .2);
+            border-color: $white;
+            @include transition();
+            &:hover {
+                @extend .d2-gradient-bg;
+                border-color: transparent;
+            }
+        }
+        @media(max-width:413px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.version4 {
+    .ct-btn {
+        margin: 0px 5px;
+        background: $white;
+        color: $black;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        font-weight: 600;
+        max-width: 100%;
+        padding: 8px 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        @include transition();
+        &.active {
+            background: rgba($white, .2);
+            border-color: $white;
+            color: $white;
+            @include transition();
+            &:hover {
+                background: $white;
+                color: $black;
+                border-color: $white;
+            }
+        }
+        @media(max-width:413px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.version7 {
+    .ct-btn {
+        margin: 0px 5px;
+        background: $white;
+        color: $black;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        font-weight: 600;
+        max-width: 100%;
+        padding: 8px 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        @include transition();
+        &.active {
+            background: rgba($white, .2);
+            border-color: $white;
+            color: $white;
+            @include transition();
+            &:hover {
+                background: $white;
+                color: $black;
+                border-color: $white;
+            }
+        }
+        @media(max-width:413px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.version8 {
+    .ct-btn {
+        margin: 0px 5px;
+        background: $white;
+        color: $black;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        font-weight: 600;
+        max-width: 100%;
+        padding: 8px 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        @include transition();
+        &.active {
+            background: rgba($white, .2);
+            border-color: $white;
+            color: $white;
+            @include transition();
+            &:hover {
+                background: $white;
+                color: $black;
+                border-color: $white;
+            }
+        }
+        @media(max-width:413px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.version9 {
+    .ct-btn {
+        margin: 0px 5px;
+        background: $white;
+        color: $black;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        font-weight: 600;
+        max-width: 100%;
+        padding: 8px 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        @include transition();
+        &.active {
+            background: rgba($white, .2);
+            border-color: $white;
+            color: $white;
+            @include transition();
+            &:hover {
+                background: $white;
+                color: $black;
+                border-color: $white;
+            }
+        }
+        @media(max-width:413px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.stat-section {
+    .section-title-wrap {
+        margin-bottom: 20px;
+    }
+}
+
+.single-stat {
+    margin-top: 60px;
+    h4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        color: #1e283c;
+    }
+    p {
+        max-width: 320px;
+        margin-bottom: 0px;
+    }
+}
+
+.active-dash-carusel,
+.social-right {
+    @media(max-width: 991px) {
+        margin-top:50px;
+    }
+}
+.social-section {
+	h1 {
+		font-size: 58px;
+		font-weight: 500;
+	}
+	p {
+		padding: 40px 0px;
+        max-width: 500px;
+	}
+}
+
+.social-section-dark {
+    
+	h1 {
+		font-size: 58px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    h2 {
+		font-size: 48px;
+        font-weight: 500;
+        color: white;
+	}
+	p {
+		padding: 30px 0px;
+        max-width: 500px;
+        color: white;
+	}
+}
+
+.card-counter2 {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 1.4rem;
+    &:hover {
+        box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+      }
+}
+.pa2 {
+    padding: .5rem;
+}
+.bg-blue {
+    background-color: #b0273a;
+}
+.dib {
+    display: inline-block;
+}
+.br3 {
+    border-radius: .5rem;
+}
+.f5, .post-body p {
+    font-size: 2rem;
+}
+.pt1 {
+    padding-top: .25rem;
+}
+.fw1 {
+    font-weight: 100;
+}
+.f2 {
+    font-size: 5.25rem;
+}
+.tc {
+    text-align: center;
+}
+.near-white {
+    color: #f4f4f4;
+}
+.fw1 {
+    font-weight: 100;
+}
+.pa3 {
+    padding: 1rem;
+}
+.bg-dark-blue {
+    background-color: #282425;
+}
+.dib {
+    display: inline-block;
+}
+.br3 {
+    border-radius: .5rem;
+}
+
+
+$dark4: #424242;
+
+.card-counter {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  }
+  
+  border-radius: 1.4rem;
+  min-height: 55rem;
+  width: 34rem;
+}

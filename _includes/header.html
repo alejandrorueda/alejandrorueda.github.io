@@ -1,0 +1,33 @@
+{% assign header_id = "header7" %}
+
+<!-- start Header Area -->
+<header id="{{ header_id }}" >
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-between">
+            <div id="logo">
+                <a href="{{ '/' | relative_url }}">
+                    <img class="logo-1" src="{{ 'img/vanth/logo/light-800.png' | relative_url }}" alt="" title="" />
+                </a>
+                <a href="index.html">
+                    <img class="logo-2" src="{{ 'img/vanth/logo/dark-800.png' | relative_url }}" alt="" title="" />
+                </a>
+            </div>
+            <div class="nav-wrap d-flex flex-row align-items-center">
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-has-children">
+                            <a href="{{ '/#' | relative_url }}">Home</a>
+                        </li>
+                        <li>
+                            <a href="{{ '#features' | relative_url }}">Features</a>
+                        </li>
+                        <li>
+                            <a href="{{ '#roadmap' | relative_url }}">Roadmap</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+

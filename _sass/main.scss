@@ -1,0 +1,38 @@
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+//
+// Grid mixins
+//
+
+@import "bootstrap/mixins/breakpoints";
+
+
+// including variables and mixins
+@import "theme/variables";
+@import "theme/mixins";
+@import "theme/flexbox";
+@import "theme/reset";
+
+
+// Custom Scss
+@import "theme/vanth";
+@import "theme/elements";
+@import "theme/menu";
+@import "theme/menu2";
+@import "theme/menu7";
+@import "theme/hero";
+@import "theme/price";
+@import "theme/points";
+@import "theme/feature";
+@import "theme/brands";
+@import "theme/review";
+@import "theme/execution";
+@import "theme/accordian";
+@import "theme/carusel";
+@import "theme/req-demo";
+@import "theme/blog";
+@import "theme/features";
+@import "theme/contact";
+@import "theme/footer";

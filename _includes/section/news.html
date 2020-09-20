@@ -1,0 +1,19 @@
+
+    <section id="features" class="feature-section pb-120 pt-90">
+        <div class="container">
+            <div class="row justify-content-center brand-wrap">
+                <div class="col-lg-12 text-center row-header">
+                    <h1><b>{{ site.news_title }}</b></h1>
+                </div>
+
+                
+               {% for carusel in site.news_slider %}
+               <div class="col-md-6 text-center" style="padding:32px;">
+                    <a href="{{ carusel['link'] }}">
+                        <img class="img-fluid img-zoom" alt="{{ carusel['tip']}}" src="{{ carusel['image'] | relative_url }}" alt="">
+                    </a>
+                </div>
+               {% endfor %}
+            </div>
+        </div>
+    </section>

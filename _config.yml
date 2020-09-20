@@ -1,0 +1,254 @@
+
+####################################
+######     Global start     ######
+####################################
+name                : 'Vanth'
+title               : 'Vanth - Security Development Analys tools'
+email               : demo@example.com
+address             : '2216 Park Avenue, California 95630 '
+phone               : 0185612012035
+tagline             : 'description for your new site here' 
+description: >- # this means to ignore newlines until "baseurl:"
+  A Cybersecurity tool for developers and analysts.
+baseurl             : "" # the subpath of your site, e.g. /blog
+url                 : "http://127.0.0.1:4001/" #  7277783  the base hostname & protocol for your site, e.g. http://example.com
+twitter_username    : vanthsec
+github_username     :  vanth
+
+paginate: 12
+paginate_path: "/blog/page:num/"
+
+# Build settings
+markdown            : kramdown
+
+# all plugin
+plugins:
+  - jekyll-feed
+
+# google_analytics
+google_analytics: ''
+
+# disqus comment
+disqus:
+  shortname: ''
+
+# template
+vanth_logo_url: 'img/vanth/logo/light-800.png'
+
+
+# trusted companies and brands
+bands_title: Trusted by Cybersecurity Programmes
+bands_slider:
+  - image: 'img/vanth/brands/ciberemprende.png'
+    tip: 'Cibersecurity Venture programme 2019 - Finalists'
+    link: 'https://www.incibe.es/sala-prensa/notas-prensa/los-10-proyectos-finalistas-ciberemprende-comienzan-su-fase-formacion'
+  - image: 'img/vanth/brands/openfuture.png'
+    tip: 'Open Future Hub Madrid 2020 - Startup performer'
+    link: 'https://www.openfuture.org/hubs/gran-via-espana-open-future'
+
+
+facts_slider:
+  - image: 'img/vanth/facts/vanth-for-developers4.png'
+    title: 'Vanth for Developers'
+    paragraph: 'With Vanth, programmers will focus entirely on the logic of the software, 
+    without worrying about the security of the program thanks to 
+    continous review of our product source code. Development team 
+    can approach your project from scratch thanks to an intuitive 
+    integrated <b>modeling editor</b> and obtain a developed 
+    product in much less time and more secure than other IDEs and 
+    conventional frameworks.'
+    button: 'More insights'
+    button_url: '#'
+    class: 'row-alternative-left'
+    align: 'left'
+  - image: 'img/vanth/facts/vanth-for-analysts3.png'
+    title: 'Vanth for Cybersecurity Analysts'
+    paragraph: 'Security analysts can monitor logs of dynamic security interactions from software in production. 
+    Threats or vulnerabilities solutions are provided by <b>Vanth</b> automatically proposing functional 
+    and white box tests and, subsequently, blocks of code capable of solving the detected problem.
+    <br></br>
+    The implementation of the tests and the correction of the vulnerability or threat by instrumentation of block of codes 
+    developed in the same technology as the software can be configured to be applied automatically when requires.'
+    button: 'Details'
+    button_url: '#'
+    class: 'row-alternative-right'
+    align: 'right'
+    
+feature_slider:
+  - title: Modeling Generator Framework
+    image: 'img/vanth/icons/vanth-modeling-150.png'
+    description: 'A Software framework based on 
+    semantic modeling and business 
+    rules to build and provide secure 
+    development code.'
+    checklist:
+      - Intuitive software modeling
+      - Security test bench
+      - Continuous vulnerability review
+    date: 26th October 2020
+  - title: Customised Testing Framework
+    image: 'img/vanth/icons/vanth-analysis-150.png' 
+    description: 'Provides a customizable testing of security during a development phase, it provides 
+    a testing ground for your development to identify flaws or vulnerabilities - sandboxes.'
+    checklist:
+      - 'Development: &nbsp;model or language'
+      - 'Custom security tests framework'
+      - 'Correct code generation for vulnerabilities and flaws'
+    date: 'Launch 2021'
+  - title: Security insights
+    image: 'img/vanth/icons/vanth-flaws-150.png' 
+    description: 'Monitorisation and provision to help application owners track the security of their services and resolving possible security issues. A Software framework based on 
+    dynamic analysis on real-time monitorisation tracking by dashboards.'
+    checklist:
+      - SIEM security configuration
+      - Appliance of custom security tests
+      - Correct code against vulnerabilities generation
+    date: 'Coming soon'
+    
+hero: 'product_fixed_image'
+
+# intro
+intro_name: 'Vanth <br>'
+intro_text: 'A Cybersecurity platform for developers and analysts for <b>secure software</b> development through <b>modeling software</b>, custom security testing, monitorization and <b>security incidents</b> detection.'
+intro_image: 'img/vanth/torch.png'
+intro_btn_one_link: '#products'
+intro_btn_one_text:  'See our products'
+
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+
+
+news_title: 'Vanth in the media'
+news_slider:
+  - image: 'https://vanthsec.com/wp-content/uploads/2020/08/site-logo.png'
+    link: 'https://www.itdigitalsecurity.es/actualidad/2020/01/ciberemprende-entra-en-su-fase-final-estos-son-los-diez-proyectos-finalistas'
+  - image: 'https://vanthsec.com/wp-content/uploads/2020/08/lawyerpress_web-300x163.png'
+    link: 'https://www.lawyerpress.com/2020/02/26/incibe-entrega-los-premios-del-certamen-de-ideas-y-proyectos-emprededores-para-start-ups-ciberemprende/'
+  - image: 'https://vanthsec.com/wp-content/uploads/2020/08/Cyber_Security_News_Blanco-300x71.jpg'
+    link: 'https://cybersecuritynews.es/estas-son-las-30-startups-de-ciberseguridad-seleccionadas-por-incibe-para-participar-en-ciberemprende-2019-parte-i/'
+  - image: 'https://vanthsec.com/wp-content/uploads/2020/08/lanuevacronicaleones-300x74.png'
+    link: 'https://elreferente.es/tecnologicos/incibe-entrega-los-premios-de-ciberemprende/'
+  - image: 'img/vanth/news/elreferente.png'
+    link: 'https://www.lanuevacronica.com/incibe-lleva-diez-proyectos-a-barcelona-en-su-demo-day'
+  - image: 'https://vanthsec.com/wp-content/uploads/2020/08/Logo-SIC-300x51.png'
+    link: 'https://revistasic.es/sic139/revistasic139.pdf'
+
+
+#####################################
+##########     Contact      ###########
+#####################################
+contact_title: 'Whenever You Need, Just Send a Message'
+contact_description: 'The first is a non technical method which requires the use of adware removal software. Download free adware and spyware removal software and use advanced tools getting infected.'
+contact_image: 'img/title-icon.png'
+contact_email: 'support@demo.com'
+contact_phone: '00 (440) 9865 562 9865'
+contact_address: 'Los Angeles, United States'
+
+#####################################
+##########     footer      ###########
+#####################################
+
+footer_title: 'Vanth'
+footer_description: ''
+
+footer_resources_link_heading: 'Resources'
+footer_resources_link_one_text: 'Guides'
+footer_resources_link_one_link: '#'
+footer_resources_link_two_text: 'Research'
+footer_resources_link_one_link: '#'
+footer_resources_link_three_text: 'Experts'
+footer_resources_link_one_link: '#'
+footer_resources_link_four_text: 'Agencies'
+footer_resources_link_one_link: '#'
+
+
+footer_features_link_heading: 'Features'
+footer_features_link_one_text: 'Guides'
+footer_features_link_one_link: '#'
+footer_features_link_two_text: 'Research'
+footer_features_link_one_link: '#'
+footer_features_link_three_text: 'Experts'
+footer_features_link_one_link: '#'
+footer_features_link_four_text: 'Agencies'
+footer_features_link_one_link: '#'
+
+
+footer_twitter_link: 'https://twitter.com/VanthSec'
+footer_linkedin_link: 'https://www.linkedin.com/company/vanthsec'
+footer_telegram_link: 'https://t.me/vanthsec'
+
+mailchimp:
+  user-id: 
+  list-id: 
+
+
+####################################
+######        Copyright       ######
+####################################
+copyright_text: © Vanth 2020 All rights reserved
+company_url: '#Vanth'
+
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
+
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+#google map api key
+
+#map: 'AIzaSyA7nx22ZmINYk9TGiXDEXGVxghC43Ox6qA'
+
+images: 
+  - image: /uploads/slider/image1.jpg
+  - image: /uploads/slider/image2.jpg
+  - image: /uploads/slider/image3.jpg
+  - image: /uploads/slider/image4.jpg

@@ -1,0 +1,40 @@
+
+    <section class="social-section aquablue-bg" style="background-color:#231f20">
+        <div class="row" style="margin-left:0px; margin-right:0px;">
+
+            {% for fact in site.facts_slider %}
+            {% if fact.align == 'left' %}
+            <div class="col-lg-6 col-md-12 row-alternative-image" style="padding:0px;">
+                <img class="img-fluid" 
+                style="max-width: 100%;" src="{{ fact.image | relative_url }}" alt="">
+            </div>
+            {% endif %}
+            {% if fact.align == 'left' %}
+            <div class="col-lg-6 col-md-12 row-alternative-left">
+            <div class="container row-alternative row-alternative-left" style="padding:100px;">
+             {% else %}
+            <div class="col-lg-6 col-md-12 row-alternative-right">
+            <div class="container row-alternative row-alternative-right" style="padding:100px;">
+            {% endif %}
+                <h2>
+                    {{ fact.title }}
+                </h2>
+                <p>
+                    {{ fact.paragraph }}
+                </p>
+                
+                <a href="{{ fact.button_url |relative_url}}" class="button1" style="margin-left: -35px;">{{ fact.button }} ></a>
+            </div>
+            </div>
+            {% if fact.align == 'right' %}
+            <div class="col-lg-6 col-md-12  row-alternative-image" style="padding:0px;">
+                <img class="img-fluid" 
+                style="max-width: 100%;max-height: 100%;" src="{{ fact.image | relative_url }}" alt="">
+            </div>
+            {% endif %}
+            {% endfor %}
+
+    </div>
+    </section>
+
+    

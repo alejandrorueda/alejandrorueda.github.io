@@ -1,0 +1,46 @@
+    <!-- Start feature section -->
+
+    <section id="features" class="feature-section pb-120 pt-90">
+        <div class="container">
+            <div class="row justify-content-center brand-wrap">
+                <div class="col-lg-12 text-center" style="font-family: 'Roboto';">
+                    <h1 style="font-size: 48px !important;"><b>See Our <a id="products">Products</a></b></h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" style="margin:3% !important; font-size:24px; color:black !important;">
+            <div class="row feature-left-wrapr no-wrap">
+
+                {% for feature in site.feature_slider %}
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="single-feature card-product" 
+                        style="color:white !important; ">
+                        <div class="desc product-text">
+                            <div style="text-align: center !important;">
+                                <img src="{{ feature.image | relative_url }}"
+                                    class="attachment-image_icon_40x40 size-image_icon_40x40" alt=""> 
+                            </div>
+                            <div class="card-product-text">
+                                <h4>{{ feature.title }}</h4>
+                            <p>{{ feature.description }}</p>
+                            <br>
+                            <ul class="product-checklist">
+                                {% for check in feature.checklist %}
+                                <li><span class="oi" data-glyph="check" title="{{ check }}" aria-hidden="true"> {{ check }}</span></li>
+                                {% endfor %}
+                            </ul>
+                            
+                            </div>
+                        </div>
+                        <br>
+                            <a href="#" class="genric-btn2" style="margin-left: -41px;">{{feature.date}}</a>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+    
